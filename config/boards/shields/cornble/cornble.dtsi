@@ -26,3 +26,15 @@
         wakeup-source;
     };
 };
+
+// Menonaktifkan fitur pembacaan baterai dan daya bawaan nice!nano 
+// yang menyebabkan Supermini NRF52840 mengalami crash/bootloop.
+&vbatt {
+    status = "disabled";
+};
+
+// Menonaktifkan kontrol daya eksternal (EXT_POWER)
+// karena Supermini menangani ini secara berbeda (via Pin 0.13)
+&ext_power {
+    status = "disabled";
+};
