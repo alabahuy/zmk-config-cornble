@@ -1,0 +1,6 @@
+if SHIELD_CORNBLE_LEFT || SHIELD_CORNBLE_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Cornble"
+
+endif
