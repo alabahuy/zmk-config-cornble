@@ -1,6 +1,0 @@
-if SHIELD_CORNBLE
-
-config ZMK_KEYBOARD_NAME
-    default "cornble"
-
-endif

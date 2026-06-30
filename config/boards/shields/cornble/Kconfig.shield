@@ -1,2 +1,0 @@
-config SHIELD_cornble
-    def_bool $(shields_list_contains,cornble)
