@@ -1,5 +1,2 @@
-config SHIELD_CORNBLE_LEFT
-    def_bool $(shields_list_contains,cornble_left)
-
-config SHIELD_CORNBLE_RIGHT
-    def_bool $(shields_list_contains,cornble_right)
+config SHIELD_cornble
+    def_bool $(shields_list_contains,cornble)
