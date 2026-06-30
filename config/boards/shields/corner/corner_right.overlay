@@ -1,4 +1,4 @@
-#include "cornble.dtsi"
+#include "corner.dtsi"
 
 &default_transform {
     col-offset = <5>; /* ZMK akan menggeser kolom kanan sebanyak +5 */
