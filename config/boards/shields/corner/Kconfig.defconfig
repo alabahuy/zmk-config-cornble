@@ -1,0 +1,13 @@
+if SHIELD_CORNER_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Corner"
+
+endif
+
+if SHIELD_CORNER_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Corner"
+
+endif

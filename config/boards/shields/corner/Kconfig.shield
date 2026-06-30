@@ -1,0 +1,5 @@
+config SHIELD_CORNER_LEFT
+    def_bool $(shields_list_contains,corner_left)
+
+config SHIELD_CORNER_RIGHT
+    def_bool $(shields_list_contains,corner_right)
