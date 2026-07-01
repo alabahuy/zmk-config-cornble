@@ -34,3 +34,7 @@
         triggers-per-rotation = <20>;
     };
 };
+
+&trackball_listener {
+    status = "okay";
+};
