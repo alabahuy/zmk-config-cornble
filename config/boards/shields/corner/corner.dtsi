@@ -24,4 +24,20 @@
         diode-direction = "col2row";
         wakeup-source;
     };
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball_split>; // Listener mengarah ke split-proxy, BUKAN hardware langsung
+        status = "disabled";
+    };
 };
