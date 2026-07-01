@@ -35,9 +35,9 @@
         };
     };
 
-    trackball_listener {
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
-        device = <&trackball_split>; // Listener mengarah ke split-proxy, BUKAN hardware langsung
+        device = <&trackball_split>; 
         status = "disabled";
     };
 };
