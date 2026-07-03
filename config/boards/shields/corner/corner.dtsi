@@ -40,4 +40,20 @@
         device = <&trackball_split>; 
         status = "disabled";
     };
+
+    // Tambahkan di dalam file corner.dtsi (di bawah node default_transform / kscan0)
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        // Gunakan pin dummy untuk dtsi, akan di-override di overlay kiri
+        a-gpios = <&gpio0 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; 
+        b-gpios = <&gpio0 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; 
+        steps = <80>;
+        status = "disabled"; // Dimatikan secara default untuk sisi kanan
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
 };
