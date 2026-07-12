@@ -15,7 +15,7 @@
 
     row-gpios
         = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
@@ -74,13 +74,6 @@
            4ms, where the default sampling rate is 8ms. */
         /* NOTE: apply this mode if you need 250Hz with direct USB connection. */
     };
-};
-
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
 };
 
 &trackball_split {
