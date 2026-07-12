@@ -10,21 +10,21 @@
         scroll_vol: scroll_vol {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp C_VOL_UP>; 
+            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>; 
         };
 
         // Behavior untuk Mouse Scroll (Layer 1)
         scroll_mouse: scroll_mouse {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>; 
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>; 
         };
 
         // Behavior untuk Next/Prev Media (Layer 2)
         scroll_media: scroll_media {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp C_PREV>, <&kp C_NEXT>; 
+            bindings = <&kp C_NEXT>, <&kp C_PREV>; 
         };
     };
 
